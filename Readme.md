@@ -1,10 +1,9 @@
 # Учебный проект «Угадай мелодию» [![Build status][travis-image]][travis-url]
 
 * Студент: [Ирина Романова](https://up.htmlacademy.ru/react/1/user/635997).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Усов](https://htmlacademy.ru/profile/id172343).
 
 ---
-
 _Не удаляйте и не изменяйте папки и файлы:_
 _`.editorconfig`, `.gitattributes`, `.gitignore`, `.travis.yml`, `package.json`._
 
