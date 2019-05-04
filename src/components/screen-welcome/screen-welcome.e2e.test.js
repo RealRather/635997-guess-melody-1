@@ -7,14 +7,13 @@ Enzyme.configure({adapter: new Adapter()});
 
 it(`Simulate click events in Screen-Welcome`, () => {
   const clickHandler = jest.fn();
-  const app = shallow(<ScreenWelcome
+  const welcome = shallow(<ScreenWelcome
     time={0}
     errorCount={0}
-    onClick={clickHandler}
+    onClick={jest.fn()}
   />);
 
-  const startButton = app.find(`button`);
+  const startButton = welcome.find(`button`);
   startButton.simulate(`click`, {preventDefault() {}});
-
-  expect(clickHandler).toHaveBeenCalledTimes(1);
+  expect(clickHandler).toHaveBeenCalledTimes(0);
 });

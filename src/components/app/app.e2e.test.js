@@ -10,11 +10,10 @@ it(`Simulate click events in App`, () => {
   const app = shallow(<App
     gameTime={0}
     errorCount={0}
-    onClick={clickHandler}
+    onClick={jest.fn()}
   />);
 
   const startButton = app.find(`button`);
   startButton.simulate(`click`, {preventDefault() {}});
-
   expect(clickHandler).toHaveBeenCalledTimes(1);
 });
