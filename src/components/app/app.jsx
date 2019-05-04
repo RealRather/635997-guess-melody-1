@@ -1,11 +1,11 @@
 import React from 'react';
-import Welcome from '../screens/welcome.jsx';
+import ScreenWelcome from '../screen-welcome/screen-welcome.jsx';
 import PropTypes from 'prop-types';
 
 const App = (props) => {
   const {gameTime, errorCount} = props;
 
-  return <Welcome
+  return <ScreenWelcome
     time={gameTime}
     errorCount={errorCount}
   />;

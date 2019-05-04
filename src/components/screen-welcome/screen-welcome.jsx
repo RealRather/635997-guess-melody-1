@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Welcome = (props) => {
+const ScreenWelcome = (props) => {
   const {time, errorCount} = props;
 
   return <section className="welcome">
@@ -19,9 +19,9 @@ const Welcome = (props) => {
   </section>;
 };
 
-Welcome.propTypes = {
+ScreenWelcome.propTypes = {
   time: PropTypes.number,
   errorCount: PropTypes.number
 };
 
-export default Welcome;
+export default ScreenWelcome;
