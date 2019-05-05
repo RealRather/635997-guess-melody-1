@@ -1,13 +1,13 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import ScreenWelcome from './screen-welcome.jsx';
+import WelcomeScreen from './welcome-screen.jsx';
 
-it(`Render ScreenWelcome`, () => {
+it(`Render WelcomeScreen`, () => {
   const tree = renderer
-    .create(<ScreenWelcome
+    .create(<WelcomeScreen
       time={0}
       errorCount={0}
-      onClick={jest.fn()}
+      clickHandler={jest.fn()}
     />)
     .toJSON();
 
