@@ -1,19 +1,21 @@
 import React from 'react';
-import Welcome from '../screens/welcome.jsx';
+import WelcomeScreen from '../welcome-screen/welcome-screen.jsx';
 import PropTypes from 'prop-types';
 
 const App = (props) => {
-  const {gameTime, errorCount} = props;
+  const {gameTime, errorCount, clickHandler} = props;
 
-  return <Welcome
+  return <WelcomeScreen
     time={gameTime}
     errorCount={errorCount}
+    clickHandler={clickHandler}
   />;
 };
 
 App.propTypes = {
   gameTime: PropTypes.number,
-  errorCount: PropTypes.number
+  errorCount: PropTypes.number,
+  clickHandler: PropTypes.func
 };
 
 export default App;
